@@ -41,6 +41,9 @@ export const StatListItem = styled.li`
     border-bottom-left-radius: 5px;
     border-top-left-radius: 5px;
   }
+  background-color: ${props => {
+    return getRandomHexColor();
+  }};
 `;
 export const Label = styled.span`
   margin-bottom: 5px;
@@ -52,3 +55,8 @@ export const Percentage = styled.span`
   font-weight: bold;
   color: #fff;
 `;
+function getRandomHexColor() {
+  return `#${Math.floor(Math.random() * 16777215)
+    .toString(16)
+    .padStart(6, 0)}`;
+}
