@@ -1,10 +1,10 @@
 import styled from 'styled-components';
+
 export const TransactionHistoryTable = styled.table`
   margin: 5vh auto;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   border-radius: 5px;
 `;
-
 export const HeadersRow = styled.tbody`
   font-size: 1.5rem;
   text-align: center;
